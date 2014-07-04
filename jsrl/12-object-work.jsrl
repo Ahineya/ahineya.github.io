@@ -2,10 +2,9 @@
 <name>Object work</name>
 <description>
     <p><span class='story'>*Mechanical voice*:</span></p>
-    <p><span class='story'>&mdash; Can you take a key from guinea pig's stomach without
-        touching pig with your manipulators?</span></p>
+    <p><span class='story'>&mdash; Can you take a key from guinea pig's stomach?</span></p>
     <p><br></p>
-    <p>You want to tell me, that you have beaten all basics levels? Ok, try it this one.</p>
+    <p>You want to tell me that you have beaten all basics levels? Ok, try this one.</p>
 </description>
 <map.file>advanced-object-work.map</map.file>
 <map.mapcontent>#######
@@ -29,13 +28,6 @@
     this.redraw();
     }
 </map.mapfunc>
-<runnerfunc>
-    (function(code) {
-    if(/guineaPig/.test(code)) {
-    throw new Error("Hey. This is an Advanced levels section, did you notice that? You can't touch guineaPig.");
-    }
-    })(code);
-</runnerfunc>
 <before>
 
 var guineaPig = (function() {
